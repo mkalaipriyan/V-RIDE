@@ -1,0 +1,12 @@
+
+drop database car;
+create ;
+grant dba to carpooling;
+conn carpooling/carpooling;
+create table edetails(eid varchar2(10),firstname varchar2(20),lastname varchar2(20),cno varchar2(10),email varchar2(20),contact varchar2(12),username varchar2(15),password varchar2(15),password2 varchar2(15)); 
+create table AdminDetails(uname varchar2(20),pw varchar2(20));
+insert into AdminDetails values('admin','admin');
+create table services(eid varchar2(10),ename varchar2(20),department varchar2(15),email varchar2(20),contact varchar2(12),add1 varchar2(30),add2 varchar2(30),routefrom varchar2(15),routeto varchar2(15),timings varchar2(20),driver varchar2(15));
+create table Report(eid varchar2(10),email varchar2(20),Report varchar2(50));
+commit;
+
